@@ -9,12 +9,12 @@ app.get("/", (c) => {
   return c.text("Hello Hono!");
 });
 
-app.route('/', api)
+app.route("/", api);
 
 serve(
   {
     fetch: app.fetch,
-    port: 3000,
+    port: 10000,
   },
   (info) => {
     console.log(`Server is running on http://localhost:${info.port}`);
