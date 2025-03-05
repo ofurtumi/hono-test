@@ -1,0 +1,23 @@
+{
+  "name": "hono-test",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "seed": "tsx ./prisma/seed.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "@prisma/client": "6.4.1",
+    "hono": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "prisma": "6.4.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.7.3"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
