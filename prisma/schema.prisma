@@ -18,3 +18,9 @@ model riddles {
   question  String
   answer    String
 }
+
+model images {
+    id      Int       @id @default(autoincrement())
+    name    String    @unique @default(autoincrement())
+    url     String
+  }
